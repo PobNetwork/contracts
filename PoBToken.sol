@@ -41,7 +41,7 @@ library SafeMath {
 }
 
 contract ERC20 {
-  uint256 totalSupply;
+  uint256 public totalSupply;
 
   function balanceOf(address _who) public view returns (uint256);
 
@@ -215,8 +215,8 @@ contract StandardToken is ERC20 {
 
 contract POBTokenERC20 is StandardToken {
     // Public variables of the token
-    string public name = "Proof Of Brain";
-    string public symbol = "PoB";
+    string public name = "POB Network";
+    string public symbol = "POB";
     uint8 constant public decimals = 18;
     uint256 constant public initialSupply = 2100*100000000;
 
